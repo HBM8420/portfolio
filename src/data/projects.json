@@ -1,26 +1,23 @@
 [
     {
-      "title": "Project A",
+      "title": "Hostel Complaint Management",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "An Interactive web-based platform for students to lodge complaints, track their status, and receive updates,making whole process streamlined.",
+      "skills": ["Html", "css","js", "php"],
+      "source": "https://github.com/HBM8420"
     },
     {
-      "title": "Project B",
+      "title": "Book Record Managment",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "A digital solution for organizing, tracking, and managing book records efficiently, ensuring easy access and streamlined record-keeping. ",
+      "skills": ["Java", "swing", "JDBC", "mySql"],
+      "source": "https://github.com/HBM8420"
     },
     {
-      "title": "Project C",
+      "title": "Unit Converter",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": " simple and efficient tool for converting between different units of measurement, making calculations quick and accurate. ",
+      "skills": ["java", "swing"],
+      "source": "https://github.com/HBM8420"
     }
   ]

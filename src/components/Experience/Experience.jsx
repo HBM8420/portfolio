@@ -1,21 +1,21 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
+import skills from "../../data/skills.json"; // Assuming this is used later, you can implement it
 import history from "../../data/history.json";
 
 import html from "../../../assets/skills/html.png";
 import css from "../../../assets/skills/css.png";
-// import javascript from "../../../assets/skills/javascript.png";
-// import reactImage from "../assets/react.png";
-// import c from "../assets/c++.jpg";
-// import java from "../assets/java.jpg";
-// import github from "../assets/github.png";
-// import tailwind from "../assets/tailwind.png";
-// import node from "../assets/node.png";
-// import express from "../assets/express.png"
-// import mongodb from "../assets/mongodb.png"
-// import php from "../assets/php.jpg"
+import javascript from "../../../assets/skills/js.jpg";
+import reactImage from "../../../assets/skills/react.png";
+import c from "../../../assets/skills/c++.jpg";
+import java from "../../../assets/skills/java.jpg";
+import github from "../../../assets/skills/github.jpg";
+import tailwind from "../../../assets/skills/tailwind.jpg";
+import node from "../../../assets/skills/node.png";
+import mongodb from "../../../assets/skills/mongodb.png";
+import php from "../../../assets/skills/php.jpg";
+import express from "../../../assets/skills/express.png";
 
 export const Experience = () => {
   const techs = [
@@ -29,6 +29,56 @@ export const Experience = () => {
       src: css,
       title: "CSS",
     },
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+    },
+    {
+      id: 4,
+      src: reactImage,
+      title: "React",
+    },
+    {
+      id: 5,
+      src: node,
+      title: "NodeJs",
+    },
+    {
+      id: 6,
+      src: mongodb,
+      title: "MongoDB",
+    },
+    {
+      id: 7,
+      src: github,
+      title: "GitHub",
+    },
+    {
+      id: 8,
+      src: tailwind,
+      title: "Tailwind",
+    },
+    {
+      id: 9,
+      src: php,
+      title: "php",
+    },
+    {
+      id: 10,
+      src: c,
+      title: "c++",
+    },
+    {
+      id: 11,
+      src: java,
+      title: "Java",
+    },
+    {
+      id: 12,
+      src: express,
+      title: "Express",
+    },
   ];
 
   return (
@@ -36,38 +86,17 @@ export const Experience = () => {
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
-          {techs.map(( id, src, title) => {
+          {techs.map((tech) => {
             return (
-              <div key={id} className={styles.skill}>
+              <div key={tech.id} className={styles.skill}>
                 <div className={styles.skillImageContainer}>
-                  <img src={src} />
+                  <img src={tech.src} alt={tech.title} />
                 </div>
-                <p>{title}</p>
+                <p>{tech.title}</p>
               </div>
             );
           })}
         </div>
-        <ul className={styles.history}>
-          {history.map((historyItem, id) => {
-            return (
-              <li key={id} className={styles.historyItem}>
-                <img
-                  src={historyItem.imageSrc}
-                  alt={`${historyItem.organisation} Logo`}
-                />
-                <div className={styles.historyItemDetails}>
-                  <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                  <ul>
-                    {historyItem.experiences.map((experience, id) => {
-                      return <li key={id}>{experience}</li>;
-                    })}
-                  </ul>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </section>
   );

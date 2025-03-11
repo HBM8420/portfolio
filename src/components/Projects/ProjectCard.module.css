@@ -17,6 +17,7 @@
 .title {
   font-size: 25px;
   font-weight: 700;
+  height: 70px;
 }
 
 .description {
@@ -32,7 +33,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
-  list-style: none;
+}
+.mydiv{
+
+  height: 100px;
 }
 
 .skill {
@@ -42,6 +46,7 @@
   background: var(--color-dark);
   padding: 2px 22px;
 }
+
 
 .links {
   width: 100%;
